@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <img src="icon.png" alt="App Icon" class="splash-icon">
+        <h1>Welcome to Random User App</h1>
+    </div>
+
+    <!-- Main Content -->
+    <main id="app">
+        <!-- Dynamic Content Rendered Here -->
+    </main>
+
+    <!-- Navigation Menu -->
+    <nav class="c-nav">
+        <button onclick="mostrarLista()">Lista</button>
+        <button onclick="mostrarFavoritos()">Favoritos</button>
+        <button onclick="mostrarBuscador()">Buscar</button>
+        <button onclick="mostrarAleatorios()">Aleatorios</button>
+        <button onclick="mostrarCapturados()">Capturados</button>
+        <button onclick="mostrarInformacion()">Info</button>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="js/api.js"></script>
+    <script src="js/lista.js"></script>
+    <script src="js/favoritos.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/informacion.js"></script>
+    <script src="js/splash.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", General);
+    </script>
+</body>
+</html>
